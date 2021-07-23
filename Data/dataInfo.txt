@@ -1,0 +1,164 @@
+data info
+users.csv
+acc_num: số hiệu vụ tai nạn
+num_veh:giấy tờ xe
+place: Được sử dụng để định vị không gian mà người sử dụng chiếm dụng trong xe tại thời điểm xảy ra tai nạn
+catu: thể loại ng dùng >??? (người lái, ng sdung)
+grav: mức độ nghiêm trọng của tai nạn
+sex:
+An_nais
+Năm sinh của người dùng 
+year_on: năm sinh
+trip: bị tai nạn trong khi
+secu: điều đầu tiên liên quan đến sự tồn tại của Thiết bị an toàn
+1 - Dây curoa
+2 - Mũ bảo hiểm
+3 - Thiết bị dành cho trẻ em
+4 - Thiết bị phản quang
+9 - Loại khác
+điều thứ hai liên quan đến việc sử dụng thiết bị an toàn
+1 - Có
+2 - Không
+3 - Không xác định được
+
+locp: liên quan đầu tiên đến sự tồn tại của toàn bộ thiết bị
+1 - Line curoa
+2 - Bảo hiểm
+3 - Device for young em
+4 - Thiết bị phản quang
+9 - Other type
+liên quan thứ hai đến việc sử dụng an toàn thiết bị
+1 - Có
+2 - Không
+3 - Unknown 
+
+pedestrian: người đi bộ trong khu vực có xe
+
+actp: Hành động của người đi bộ:
+Di chuyển
+0 - không được chỉ định hoặc không áp dụng
+1 - Hướng xe va chạm
+2 - Hướng ngược lại của xe
+Đa dạng
+3 - Giao nhau
+4 - Mặt nạ
+5 - Chơi - chạy
+6 - Với động vật
+9 - Loại khác 
+
+etatp: Biến này được sử dụng để chỉ định liệu người đi bộ bị thương có ở một mình hay không
+1 - Một mình
+2 - Đi kèm
+3 - Trong một nhóm 
+
+
+VEHICLES
+num: như trên
+Num_Veh: Số nhận dạng của phương tiện được lấy lại cho mỗi người dùng trên phương tiện này (bao gồm cả người đi bộ
+gắn vào các phương tiện đã va chạm với chúng) - Mã chữ và số 
+catv: loại xe
+obs: Đã cố định chướng ngại vật:
+1 - Xe đậu
+2 - Cây
+3 - Trượt kim loại
+4 - Đường trượt bê tông
+5 - Trang trình bày khác
+6 - Nhà, tường, trụ cầu
+7 - Hỗ trợ biển báo dọc hoặc bàn gọi khẩn cấp
+8 - Đăng
+9 - Nội thất đường phố 
+10 - Lan can
+11 - Đảo, nơi ẩn náu, bến trên
+12 - Vỉa hè
+13 - Mương, kè, mặt đá
+14 - Các chướng ngại vật cố định khác trên đường
+15 - Các chướng ngại vật cố định khác trên vỉa hè hoặc vai
+16 - Giải phóng mặt đường không có chướng ngại vật 
+
+obsm:
+Đã xảy ra chướng ngại vật có thể di chuyển:
+1 - Người đi bộ
+2 - Phương tiện
+4 - Phương tiện đường sắt
+5 - Động vật trong nhà
+6 - Động vật hoang dã
+9 - Loại khác 
+
+manv
+Các thao tác chính trước khi xảy ra tai nạn:
+1 - Không thay đổi hướng
+2 - Cùng hướng, cùng hàng
+3 - Giữa 2 dòng
+4 - Ngược lại
+5 - Làm sai cách
+6 - Vượt qua khu bảo tồn trung tâm
+7 - Trên làn đường dành cho xe buýt, cùng chiều
+8 - Ở làn đường dành cho xe buýt, ngược chiều
+9 - Bằng cách chèn
+10 - Quay đầu xe trên đường 
+Chuyển làn đường
+11 - Trái
+12 - Đúng
+Bị trục xuất
+13 - Trái
+14 - Đúng
+Quay
+15 - Trái
+16 - Đúng
+Vượt quá
+17 - Trái
+18 - Đúng
+Đa dạng
+19 - Băng qua đường
+20 - Điều động đỗ xe
+21 - Cơ động tránh
+22 - Cửa mở
+23 - Đã dừng (trừ đỗ xe)
+24 - Đỗ xe (có người ở) 
+
+Occutc
+Số lượng người tham gia giao thông công cộng 
+
+choc:
+Điểm sốc ban đầu:
+1 - Trước
+2 - Mặt trước bên phải
+3 - Phía trước bên trái
+4 - Phía sau
+5 - Lùi phải
+6 - Phía sau bên trái
+7 - Bên phải
+8 - Mặt trái
+9 - Nhiều cú sốc (cuộn) 
+
+CARACTERISTICS 
+hrmn : time (= minutes ???)
+lum : ánh sáng
+dep : mã INSEE ???
+Localisation 
+int: loại giao lộ
+atm : Atmospheric conditions:
+col: tình hình va chạm
+adr : địa chỉ bưu điện:biến được điền cho các tai nạn xảy ra trong các khu vực xây dựng ??
+gps: ??
+lat, long: kinh, vĩ độ
+
+Places
+Num_Acc 
+catr : loại đường
+voie : số đường
+V1: ??? số tuyến đường???
+V2: Chỉ số chữ và số của đường
+circ: chế độ đường (1, 2 chiều, bla bla)
+nbv: số làn
+vosp: tồn tại của làn đường dành riêng,???
+Prof: độ dốc
+pr: ??? Số PR nhà (số thiết bị đầu cuối ngược dòng)
+pr1: Khoảng cách tính bằng mét tới PR (liên quan đến thiết bị đầu cuối ngược dòng)
+plan: thẳng, cong trái, cong phải, cong chữ S
+lartpc: ??
+larroutChiều rộng của lòng đường dành cho xe cộ qua lại không bao gồm dải dừng khẩn cấp, CPR và chỗ đậu xe
+surf: đk mặt đường
+infra: cơ sở hạ tầng
+situ: tình trạng tai nạn (where)
+env1: điểm trường: gần trường học ???
